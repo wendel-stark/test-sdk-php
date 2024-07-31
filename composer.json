@@ -1,0 +1,37 @@
+{
+  "name": "jubiranana/test",
+  "version": "0.1.0",
+  "type": "library",
+  "description": "SDK to facilitate PHP integrations with Stark Bank",
+  "homepage": "https://github.com/starkbank/sdk-php/tree/test/sdk-deploy-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wendel",
+      "email": "wendel.silvestre@starkbank.com",
+      "homepage": "https://starkbank.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "starkinfra/core": "^0.3.0"
+  },
+  "keywords": [
+    "starkbank-test-sdk"
+  ],
+  "autoload": {
+    "files": ["src/init.php"],
+    "psr-4": {
+      "StarkBank\\": "src/"
+    },
+    "classmap": ["src/"]
+  },
+  "scripts": {
+    "check-style": "phpcs src tests",
+    "fix-style": "phpcbf src tests"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
